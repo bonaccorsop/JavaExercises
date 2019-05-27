@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Birra.Main",
+            "projectName": "java_8c2bb2ab"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Main",
+            "request": "launch",
+            "mainClass": "Main",
+            "projectName": "java_8c2bb2ab"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Birrificio",
+            "request": "launch",
+            "mainClass": "Birrificio",
+            "projectName": "java_8c2bb2ab"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "java_8c2bb2ab"
+        }
+    ]
+}

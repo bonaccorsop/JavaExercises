@@ -1,0 +1,15 @@
+
+Implementare una classe Film con attributi titolo, genere, durata  (in minuti). 
+Implementare un adeguato metodo tostring(). 
+
+
+Successivamente, Implementare una classe Cineteca, avente come attributo un arraylist di film. 
+Fornire il metodo aggiungi(Film f). 
+
+
+
+
+Inoltre, scrivere i metodi :
+- stampaTutti(): stampa tutti i film presenti nella cineteca;
+- stampaGenere(String g): stampa tutti e soli i film del genere g;
+- stampaDurataAlPiu(int d): stampa tutti e soli i film di durata al più d.

@@ -1,0 +1,85 @@
+PARTE 1 (EASY):
+Implementare una classe 
+Birra 
+con il seguente attributo:
+- double litriRimanenti
+
+Tale attributo dovrà contenere inizialmente (cioè all'atto della creazione dell'oggetto) il valore 2.0.
+Implementare i seguenti metodi:
+
+- boolean bevi(double litriDesiderati): tale metodo dovrà svuotare la birra di esattamente il quantitativo fornito in litriDesiderati (es. se la birra conteneva 2.0 litri e viene passato come parametro 0.5, nella birra dovranno rimanere 1.5 litri); se l'operazione avviene senza problemi, il metodo dovrà restituire true, se invece si desidera bere più di quanto disponibile nella bottiglia allora il metodo, dopo aver svuotato la birra, dovrà restituire false
+
+- boolean bevi(): tale metodo dovrà svuotare la birra di tutto il suo contenuto residuo, ossia dovrà azzerare il numero di litri rimanenti. Tale metodo deve restituire:
+true -> se sono riuscito a bere qualcosa (ossia se c'era ancora qualcosa, anche minima, come litri rimanenti)
+false -> se la birra era già vuota (e quindi non sono riuscito a bere niente). 
+NdR: non è un caso che i due metodi abbiano lo stesso nome (è un caso di....)
+
+boolean isVuota(): tale metodo dovrà restituire true se e solo se la birra è totalmente vuota, altrimenti false.
+
+double getLitriRimanenti(): restituisce i litri rimanenti
+
+creare una classe Principale con metodo main in cui si prova la classe Birra
+
+
+
+
+
+PARTE 2 (HARD, solo per veri bevitori)
+Implementare una sottoclasse di Birra che chiamerete BirraNoiosa; tale classe, rispetto alla superclasse, avrà in più l'attributo
+
+- int birreBevute
+
+tale attributo dovrà contare quante birre,IN TOTALE, sono state svuotate nel chiamante (il main()). Se provo a bere più di 3 birre (mezza cassetta per intenderci), allora non solo neanche un sorso di birra dovrà essere bevuta, ma in più dovrà essere visualizzato un messaggio a video .
+es:
+  BirraNoiosa b1 = new BirraNoiosa();
+  BirraNoiosa b2 = new BirraNoiosa();
+  BirraNoiosa b3 = new BirraNoiosa();
+  BirraNoiosa b4 = new BirraNoiosa();
+
+  b1.bevi();
+  if (b1.isVuota()==true)
+  {
+   System.out.println("SVUOTATA LA PRIMA!") 
+  }
+  else
+  {
+    System.out.println("Nella prima birra rimangono ancora " +b1.getLitriRimanenti() + " litri.") 
+  }
+  b2.bevi();
+  if (b2.isVuota()==true)
+  {
+   System.out.println("SVUOTATA LA SECONDA!") 
+  }
+  else
+  {
+    System.out.println("Nella seconda birra rimangono ancora " +b2.getLitriRimanenti() + " litri.") 
+  }
+  b3.bevi();
+  if (b3.isVuota()==true)
+  {
+   System.out.println("SVUOTATA LA TERZA!") 
+  }
+  else
+  {
+    System.out.println("nella terza birra rimangono ancora " +b3.getLitriRimanenti() + " litri.") 
+  }
+
+  b4.bevi();
+
+  if (b4.isVuota()==true)
+  {
+   System.out.println("SVUOTATA LA QUARTA!") 
+  }
+    else
+  {
+ System.out.println("nella quarta birra rimangono ancora " +b1.getLitriRimanenti() + " litri.") 
+  }
+ 
+  -------->su schermo dovrà uscire:
+SVUOTATA LA PRIMA!
+SVUOTATA LA SECONDA!
+SVUOTATA LA TERZA!
+Fermati! Devi guidare!!!
+nella quarta birra rimangono ancora 2.0 litri
+
+
